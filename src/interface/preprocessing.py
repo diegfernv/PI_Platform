@@ -35,7 +35,11 @@ def use_embedding(
             column_label=response_col,
             columns_ignore=[response_col]
         )
-        instance.loadModelTokenizer()
+        if "esmc" in instance.model_name:
+            instance.loadModel()
+        else:
+            instance.loadModelTokenizer()
+        
         instance.embeddingProcess(batch_size=batch_size)
         return instance.getDataFrame()
     except Exception as e:

@@ -50,7 +50,7 @@ EMBEDDING_MODELS = {
     "Ankh2": "ElnaggarLab/ankh2-ext1",
     "Bert": "Rostlab/prot_bert",
     "ESM2": "facebook/esm2_t6_8M_UR50D",
-    "ESMC": "esmc_600",
+    "ESMC": "esmc_600m",
     "Mistral": "RaphaelMourad/Mistral-Prot-v1-134M",
     "Prot T5": "Rostlab/prot_t5_xl_uniref50"
 }
